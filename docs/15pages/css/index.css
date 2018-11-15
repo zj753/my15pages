@@ -1,0 +1,308 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+}
+header aside span:before {
+  content: '\f002';
+  position: absolute;
+  font-family: 'my_font';
+  color: dimgrey;
+  margin-top: 15px;
+  margin-left: 7px;
+}
+header aside span:after {
+  position: absolute;
+  content: 'OK';
+  font-size: 12px;
+  padding: 3px 5px;
+  border-radius: 12px;
+  background: gray;
+  color: white;
+  margin-top: 11px;
+  margin-left: 153px;
+}
+header aside input {
+  height: 25px;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 16px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: 1px solid #969696;
+  width: 180px;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #010101;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px 1px gray;
+}
+header nav a {
+  padding: 8px 15px;
+  text-decoration: none;
+  color: white;
+}
+header nav a:hover,
+header nav a:active {
+  color: #02B2B5;
+}
+header .down {
+  background: url("../img/index.PNG") no-repeat center 20%;
+  height: 260px;
+}
+main {
+  padding: 10px;
+}
+main div.one,
+main div.two {
+  display: flex;
+  justify-content: space-around;
+}
+main div.one div.left,
+main div.two div.left,
+main div.one div.mid,
+main div.two div.mid {
+  flex: 1;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+main div.one div.left h3,
+main div.two div.left h3,
+main div.one div.mid h3,
+main div.two div.mid h3 {
+  background: linear-gradient(#02fcff, #02b2b5, #02878a);
+  color: white;
+  padding: 7px 0 7px 25px;
+  border-top-left-radius: 10px ;
+  border-top-right-radius: 10px;
+  font-weight: 500;
+}
+main div.one div.left h3 span,
+main div.two div.left h3 span,
+main div.one div.mid h3 span,
+main div.two div.mid h3 span {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+main div.one div.left > a,
+main div.two div.left > a,
+main div.one div.mid > a,
+main div.two div.mid > a {
+  display: flex;
+  justify-content: flex-end;
+  padding: 6px 25px 6px;
+  text-decoration: none;
+}
+main div.one div.left > a:after,
+main div.two div.left > a:after,
+main div.one div.mid > a:after,
+main div.two div.mid > a:after {
+  content: '\f0da';
+  position: absolute;
+  font-family: 'my_font';
+  margin-left: 7px;
+  margin-top: 4px;
+}
+main div.one div.left > a:hover,
+main div.two div.left > a:hover,
+main div.one div.mid > a:hover,
+main div.two div.mid > a:hover,
+main div.one div.left > a:active,
+main div.two div.left > a:active,
+main div.one div.mid > a:active,
+main div.two div.mid > a:active {
+  text-decoration: underline;
+}
+main div.one div.left p,
+main div.two div.left p,
+main div.one div.mid p,
+main div.two div.mid p {
+  display: flex;
+  background-color: #f6f6f6;
+  line-height: 20px;
+  text-align: justify;
+  color: dimgrey;
+}
+main div.one div.left p,
+main div.two div.left p {
+  padding: 20px 20px 25px 20px;
+}
+main div.one div.left p:first-of-type:after,
+main div.two div.left p:first-of-type:after {
+  content: '';
+  height: 1px;
+  background-color: #bdbdbd;
+  position: absolute;
+  width: 260px;
+  margin-left: 18px;
+  margin-top: 60px;
+}
+main div.one div.left p span:first-of-type,
+main div.two div.left p span:first-of-type {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #EF862D ;
+  font-size: 14px;
+  margin-left: -5px;
+  margin-right: 5px;
+}
+main div.one div.left p span:last-of-type,
+main div.two div.left p span:last-of-type {
+  flex: 4;
+}
+main div.one div.mid p,
+main div.two div.mid p {
+  padding: 25px 10px 25px 10px;
+}
+main div.one div.mid p a,
+main div.two div.mid p a {
+  flex: 2;
+}
+main div.one div.mid p a img,
+main div.two div.mid p a img {
+  width: 89px;
+  height: 89px;
+  border-radius: 60px;
+  margin-top: 10px;
+}
+main div.one div.mid p span,
+main div.two div.mid p span {
+  flex: 4;
+}
+main div.one div.right,
+main div.two div.right {
+  flex: 1;
+}
+main div.one div.right div.top,
+main div.two div.right div.top,
+main div.one div.right div.down,
+main div.two div.right div.down {
+  border-radius: 10px;
+  border: 1px solid darkgray;
+  margin-bottom: 10px;
+}
+main div.one div.right div.top h3 {
+  background: linear-gradient(#02fcff, #02b2b5, #02878a);
+  color: white;
+  padding: 7px 0 7px 25px;
+  border-top-left-radius: 10px ;
+  border-top-right-radius: 10px;
+  font-weight: 500;
+}
+main div.one div.right div.top h3 span {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+main div.one div.right div.top > div.dd {
+  display: flex;
+}
+main div.one div.right div.top > div.dd div.left,
+main div.one div.right div.top > div.dd div.rihgt {
+  padding: 10px 20px 10px 20px;
+}
+main div.one div.right div.top > div.dd div.left {
+  flex: 4;
+  border: none;
+}
+main div.one div.right div.top > div.dd div.left label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+main div.one div.right div.top > div.dd div.left label input {
+  height: 20px;
+  width: 110px;
+  margin-left: 10px;
+}
+main div.one div.right div.top > div.dd div.left > div {
+  margin-left: 15px;
+}
+main div.one div.right div.top > div.dd div.left > div a {
+  margin-right: 10px;
+  color: #269DF9;
+}
+main div.one div.right div.top > div.dd div.right {
+  flex: 1;
+}
+main div.one div.right div.top > div.dd div.right button {
+  outline: none;
+  width: 60px;
+  color: white;
+  background: linear-gradient(#02fcff, #02b2b5, #02878a);
+  padding: 3px 8px;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  margin-left: -55px;
+}
+main div.one div.right div.down {
+  text-align: center;
+}
+main div.one div.right div.down img {
+  width: 95%;
+  height: 70px;
+}
+main div.two div.right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+main div.two div.right div.top {
+  height: 140px;
+}
+main div.two div.right div.down {
+  height: 80px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 15px;
+  border-top: 2px gray solid;
+}
+footer P:first-of-type {
+  display: flex;
+}
+footer P:first-of-type span {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer p:last-of-type {
+  padding: 12px 0 0 0;
+}
+footer p:last-of-type span {
+  margin-right: 5px;
+  margin-left: 5px;
+}

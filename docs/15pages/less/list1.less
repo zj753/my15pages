@@ -1,0 +1,212 @@
+@charset "UTF-8";
+*{
+  padding: 0;
+  margin: 0;
+}
+.bcenter{
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'),
+  url('../fonts/icomoon.svg') format('svg'),
+  url('../fonts/icomoon.ttf') format('ttf'),
+  url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header{
+  height: 250px;
+  width: 100%;
+  background: url('../img/list1tou.PNG') no-repeat center 20%;
+  background-size:100%;
+}
+nav{
+
+  background-color: #02B2B5;
+  p{
+    display: flex;
+    .bcenter;
+    a:first-child{
+      border-left:none;
+    }
+    a:last-child{
+      border-right: none;
+    }
+    a,a:visited{
+      padding: 10px 22px;
+      border-right: 1px solid #7fa392;
+      border-left:1px solid #8fc8c3;
+      color: white;
+      text-decoration: none;
+    }
+    a:hover,a:active{
+      color: #027275;
+    }
+  }
+
+}
+main{
+  .bcenter;
+  margin-top: 35px;
+  display: flex;
+  font-size: 14px;
+
+  aside{
+  flex: 1;
+    h4{
+      background-color:#02B2B5;
+      padding: 7px 0 7px 43px;
+      color: white;
+      font-weight: 400;
+      font-size: 17px;
+
+      &:before{
+        font-family: 'my_font';
+        content: '\f0a2';
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 4px;
+      }
+    }
+    div.top{
+      margin-bottom: 10px;
+      box-shadow:0 0  5px 1px #bbbbbb;
+      background-color: #c5f4f7;
+
+      p{
+        padding: 8px 0 8px 43px;
+        font-weight: bold;
+        color: #5b5b5b;
+        &:before{
+          font-family: 'my_font';
+          content: '\f064';
+          position: absolute;
+          margin-left: -30px;
+          margin-top: 4px;
+          color:#02B2B5;
+        }
+      }
+    }
+    div.bottom{
+      box-shadow:0 0  5px 1px #bbbbbb;
+      background-color: #c5f4f7;
+      margin-bottom: 10px;
+      >span{
+        font-weight: bold;
+       padding: 12px 0 12px 25px;
+        display: flex;
+        color: #5b5b5b;
+      }
+      p{
+        line-height: 30px;
+        &:first-of-type{
+          margin-left: 56px;
+          font-size: 16px;
+          color: red;
+          font-weight: bold;
+        }
+        &:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4){
+          margin-left: 67px;
+          color: #909090;
+        }
+        &:nth-of-type(5),&:nth-of-type(6){
+          display: flex;
+          margin-left: 40px;
+          font-size: 12px;
+          button:first-child,button:last-child{
+            outline: none;
+            border: gainsboro 1px solid;
+            margin-right: 5px;
+            background: linear-gradient(white,lightblue);
+            padding: 3px 3px 5px 25px;
+            margin-bottom: 6px;
+            &:before{
+              position: absolute;
+              content: '';
+
+              height: 30px;
+              width: 30px;
+              margin-left: -20px;
+            }
+          }
+          button:first-child{
+           &:before{
+             background: url("../img/qq.png") no-repeat;
+           }
+          }
+          button:last-child{
+            background: linear-gradient(white, #bccda2);
+            &:before{
+              background: url("../img/pepol.png") no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+  section{
+    margin-left: 20px;
+    //font-size: 12px;
+    color: #818181;
+  flex: 3;
+    div.top{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 3px 5px 5px;
+      background-color: #c5f4f7;
+      border: 1px solid #abdadd;
+      margin-bottom: 7px;
+      color: gray;
+      h4{
+        font-weight: 600;
+        font-size: 15px;
+      }
+      span{
+        font-size: 13px;
+      }
+    }
+    div.bottom{
+      border: 1px solid #abdadd;
+      box-shadow:0 0  5px 1px #bbbbbb;
+      padding: 8px 10px 5px 10px;
+      p{
+        padding: 9px 4px 9px 13px;
+       border-bottom: 1px dashed gainsboro;
+        display: flex;
+        span:last-of-type{
+          font-size: 12px;
+        }
+        justify-content: space-between;
+        &:first-of-type,&:nth-of-type(2){
+          span:first-of-type{
+            font-weight: bold;
+            color: #676767;
+          }
+        }
+        &:last-of-type{
+          border-bottom: none;
+          padding: 25px 0 3px 8px;
+          font-size: 12px;
+        }
+      }
+    }
+
+  }
+}
+footer{
+  text-align: center;
+  font-size: 13px;
+  span{
+    margin: 0 6px;
+  }
+  P:first-child{
+    background-color:#02B2B5;
+    padding: 5px 0;
+    color: white;
+  }
+  p:last-child{
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,214 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header {
+  height: 250px;
+  width: 100%;
+  background: url('../img/list1tou.PNG') no-repeat center 20%;
+  background-size: 100%;
+}
+nav {
+  background-color: #02B2B5;
+}
+nav p {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+nav p a:first-child {
+  border-left: none;
+}
+nav p a:last-child {
+  border-right: none;
+}
+nav p a,
+nav p a:visited {
+  padding: 10px 22px;
+  border-right: 1px solid #7fa392;
+  border-left: 1px solid #8fc8c3;
+  color: white;
+  text-decoration: none;
+}
+nav p a:hover,
+nav p a:active {
+  color: #027275;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 35px;
+  display: flex;
+  font-size: 14px;
+}
+main aside {
+  flex: 1;
+}
+main aside h4 {
+  background-color: #02B2B5;
+  padding: 7px 0 7px 43px;
+  color: white;
+  font-weight: 400;
+  font-size: 17px;
+}
+main aside h4:before {
+  font-family: 'my_font';
+  content: '\f0a2';
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 4px;
+}
+main aside div.top {
+  margin-bottom: 10px;
+  box-shadow: 0 0  5px 1px #bbbbbb;
+  background-color: #c5f4f7;
+}
+main aside div.top p {
+  padding: 8px 0 8px 43px;
+  font-weight: bold;
+  color: #5b5b5b;
+}
+main aside div.top p:before {
+  font-family: 'my_font';
+  content: '\f064';
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 4px;
+  color: #02B2B5;
+}
+main aside div.bottom {
+  box-shadow: 0 0  5px 1px #bbbbbb;
+  background-color: #c5f4f7;
+  margin-bottom: 10px;
+}
+main aside div.bottom > span {
+  font-weight: bold;
+  padding: 12px 0 12px 25px;
+  display: flex;
+  color: #5b5b5b;
+}
+main aside div.bottom p {
+  line-height: 30px;
+}
+main aside div.bottom p:first-of-type {
+  margin-left: 56px;
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}
+main aside div.bottom p:nth-of-type(2),
+main aside div.bottom p:nth-of-type(3),
+main aside div.bottom p:nth-of-type(4) {
+  margin-left: 67px;
+  color: #909090;
+}
+main aside div.bottom p:nth-of-type(5),
+main aside div.bottom p:nth-of-type(6) {
+  display: flex;
+  margin-left: 40px;
+  font-size: 12px;
+}
+main aside div.bottom p:nth-of-type(5) button:first-child,
+main aside div.bottom p:nth-of-type(6) button:first-child,
+main aside div.bottom p:nth-of-type(5) button:last-child,
+main aside div.bottom p:nth-of-type(6) button:last-child {
+  outline: none;
+  border: gainsboro 1px solid;
+  margin-right: 5px;
+  background: linear-gradient(#ffffff, #add8e6);
+  padding: 3px 3px 5px 25px;
+  margin-bottom: 6px;
+}
+main aside div.bottom p:nth-of-type(5) button:first-child:before,
+main aside div.bottom p:nth-of-type(6) button:first-child:before,
+main aside div.bottom p:nth-of-type(5) button:last-child:before,
+main aside div.bottom p:nth-of-type(6) button:last-child:before {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 30px;
+  margin-left: -20px;
+}
+main aside div.bottom p:nth-of-type(5) button:first-child:before,
+main aside div.bottom p:nth-of-type(6) button:first-child:before {
+  background: url("../img/qq.png") no-repeat;
+}
+main aside div.bottom p:nth-of-type(5) button:last-child,
+main aside div.bottom p:nth-of-type(6) button:last-child {
+  background: linear-gradient(#ffffff, #bccda2);
+}
+main aside div.bottom p:nth-of-type(5) button:last-child:before,
+main aside div.bottom p:nth-of-type(6) button:last-child:before {
+  background: url("../img/pepol.png") no-repeat;
+}
+main section {
+  margin-left: 20px;
+  color: #818181;
+  flex: 3;
+}
+main section div.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 3px 5px 5px;
+  background-color: #c5f4f7;
+  border: 1px solid #abdadd;
+  margin-bottom: 7px;
+  color: gray;
+}
+main section div.top h4 {
+  font-weight: 600;
+  font-size: 15px;
+}
+main section div.top span {
+  font-size: 13px;
+}
+main section div.bottom {
+  border: 1px solid #abdadd;
+  box-shadow: 0 0  5px 1px #bbbbbb;
+  padding: 8px 10px 5px 10px;
+}
+main section div.bottom p {
+  padding: 9px 4px 9px 13px;
+  border-bottom: 1px dashed gainsboro;
+  display: flex;
+  justify-content: space-between;
+}
+main section div.bottom p span:last-of-type {
+  font-size: 12px;
+}
+main section div.bottom p:first-of-type span:first-of-type,
+main section div.bottom p:nth-of-type(2) span:first-of-type {
+  font-weight: bold;
+  color: #676767;
+}
+main section div.bottom p:last-of-type {
+  border-bottom: none;
+  padding: 25px 0 3px 8px;
+  font-size: 12px;
+}
+footer {
+  text-align: center;
+  font-size: 13px;
+}
+footer span {
+  margin: 0 6px;
+}
+footer P:first-child {
+  background-color: #02B2B5;
+  padding: 5px 0;
+  color: white;
+}
+footer p:last-child {
+  padding: 10px 0;
+}

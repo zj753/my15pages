@@ -1,0 +1,233 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header aside {
+  display: flex;
+  justify-content: space-between;
+}
+header aside a {
+  width: 210px;
+}
+header aside a img {
+  width: 100%;
+}
+header aside div {
+  margin-top: 10px;
+}
+header aside div span {
+  margin: 0 6px;
+}
+header aside div p:last-of-type {
+  margin-top: 10px;
+  text-align: right;
+}
+header aside div p:last-of-type span {
+  background-color: #076CE0 ;
+  color: white;
+  display: inline-block;
+  height: 26px;
+  margin-top: -5px;
+  line-height: 26px;
+  padding: 0 3px;
+}
+header aside div p:last-of-type span:after {
+  content: '\f078';
+  position: absolute;
+  font-family: 'my_font';
+  color: white;
+  margin-left: -222px;
+  background-color: #076CE0 ;
+  margin-top: 1px;
+  height: 24px;
+  width: 20px;
+  text-align: center;
+  line-height: 24px;
+}
+header aside div p:last-of-type input {
+  height: 22px;
+}
+header aside div p:last-of-type input:first-child {
+  width: 100px;
+}
+header aside div p:last-of-type input:last-of-type {
+  width: 140px;
+  margin-left: 10px;
+  margin-right: -10px;
+}
+header div.img {
+  height: 249px;
+  background: url("../img/index2lo.PNG") no-repeat;
+  width: 100%;
+}
+a,
+a:link {
+  text-decoration: none;
+  color: #010101;
+  line-height: 22px;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #076CE0 ;
+}
+main {
+  margin: 10px 0;
+  display: flex;
+}
+main img {
+  width: 50px;
+}
+main div.left {
+  background-color: #EFECE7;
+  flex: 1;
+}
+main div.left h3 {
+  padding: 2px 0 2px 10px;
+  background-color: #076CE0 ;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+main div.left div.up a {
+  display: block;
+  padding-left: 25px;
+}
+main div.left div.up a:before {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 4px;
+  background-color: #3f3f3f;
+  margin-left: -10px;
+  margin-top: 9px;
+}
+main div.left div.up a:nth-of-type(3),
+main div.left div.up a:nth-of-type(4) {
+  padding-left: 40px;
+}
+main div.left div.up a:last-of-type {
+  margin-bottom: 100px;
+}
+main div.left div.down {
+  color: #929292;
+  padding-bottom: 10px;
+}
+main div.left div.down a {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  color: #464646;
+}
+main div.left div.down a:hover {
+  color: #076CE0 ;
+}
+main > div.mid h3,
+main > div.right h3 {
+  padding: 4px 0;
+  border-bottom: 1px dashed #adadad;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+main div.mid {
+  flex: 2.8;
+  margin: 0 15px;
+}
+main div.mid div.up a {
+  width: 100%;
+}
+main div.mid div.up a img {
+  width: 100%;
+  height: 225px;
+}
+main div.mid div.mid1 > div {
+  padding: 0 5px 5px 0;
+  line-height: 22px;
+}
+main div.mid div.mid1 > div a {
+  display: block;
+  float: left;
+  width: 200px;
+  padding-bottom: 6px;
+}
+main div.mid div.mid1 > div a img {
+  width: 92%;
+}
+main div.mid div.down > div {
+  display: flex;
+}
+main div.mid div.down > div a {
+  flex: 1;
+  padding-right: 9px;
+  box-sizing: border-box;
+}
+main div.mid div.down > div a img {
+  width: 100%;
+}
+main div.mid div.down > div p {
+  flex: 1.85;
+  line-height: 22px;
+}
+main div.right {
+  flex: 1;
+}
+main div.right div.up a,
+main div.right div.mid2 a {
+  display: block;
+}
+main div.right div.up a:before,
+main div.right div.mid2 a:before {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 4px;
+  background-color: #3f3f3f;
+  margin-left: -10px;
+  margin-top: 9px;
+}
+main div.right div.mid2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+main div.right div.mid2 a {
+  padding-left: 5px;
+}
+main div.right div.down a {
+  width: 100%;
+}
+main div.right div.down a img {
+  width: 100%;
+  height: 180px;
+}
+main div.right div.down div.bo {
+  display: flex;
+  justify-content: space-around;
+}
+main div.right div.down div.bo img {
+  height: 50px;
+}
+footer {
+  padding: 10px 0;
+  text-align: center;
+  border-top: 2px solid grey;
+}
+footer span {
+  margin: 0 5px;
+}

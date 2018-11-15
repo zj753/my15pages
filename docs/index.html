@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #div1{
+            width: 200px;
+            height: 700px;
+            position: absolute;
+            top: 30px;
+            left: -200px;
+            background: url("15pages/img/ce2.jpg") no-repeat;
+            background-size: cover;
+            box-shadow: 1px 1px 2px 1px grey;
+
+        }
+        span{
+            width: 30px;
+            height: 80px;
+            text-align: center;
+            background: url("15pages/img/ce5.jpg") no-repeat center;
+            color: black;
+            position: absolute;
+            display: inline-block;
+            padding-top: 10px;
+            left: 200px;
+            top: 80px;
+            box-shadow: 1px 1px 2px 1px grey;
+        }
+
+        nav h3{
+            color:black;
+            letter-spacing: 1px;
+            margin: 0;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            background: url("15pages/img/ce1.jpg") no-repeat;
+        }
+        nav div.bottom{
+            width: 200px;
+            height: 650px;
+            overflow-y: auto;
+        }
+        nav dl dd{
+            display: none;
+        }
+        nav dl{
+            padding: 10px;
+        }
+        nav dl dt{
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+            color: #4a616b;
+            padding: 5px 0 5px 20px;
+        }
+        nav dl:hover dd{
+            display: block;
+            position: relative;
+            padding: 5px 5px 5px 20px;
+            /*margin-left: 20px;*/
+            border-bottom: 1px dashed darkgrey;
+        }
+        nav dl:hover dd a{
+            text-decoration: none;
+            color: black;
+        }
+        nav dl:hover dd a:hover{
+            /*color: white;*/
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+        }
+        .main iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var div1=document.getElementById('div1');
+            div1.onmouseover=function(){
+                mousemv(0);
+            };
+            div1.onmouseout=function(){
+                mousemv(-200);
+            }
+        };
+        var timer=null;
+        function mousemv(itarget){
+            var div1=document.getElementById('div1');
+            clearInterval(timer);
+            var speed=0;
+            if(div1.offsetLeft<itarget){
+                speed=10;
+            }else{
+                speed=-10;
+            }
+            timer=setInterval(function(){
+
+                if(div1.offsetLeft==itarget){
+                    clearInterval(timer);
+                }else{
+                    div1.style.left=div1.offsetLeft+speed+'px';
+                }
+            },30);
+        }
+    </script>
+</head>
+<body>
+<main class="main">
+    <nav id="div1" >
+        <h3>分类</h3>
+        <div class="bottom">
+            <dl>
+                <dt>15个模拟网页</dt>
+                <dd> <a href="15pages/主页.html" target="iframe">主页</a></dd>
+                <dd> <a href="15pages/主页0.html" target="iframe">主页0</a></dd>
+                <dd> <a href="15pages/主页1.html" target="iframe">主页1</a></dd>
+                <dd> <a href="15pages/主页2.html" target="iframe">主页2</a></dd>
+                <dd> <a href="15pages/主页3.html" target="iframe">主页3</a></dd>
+                <dd> <a href="15pages/主页4.html" target="iframe">主页4</a></dd>
+                <dd> <a href="15pages/主页5.html" target="iframe">主页5</a></dd>
+                <dd> <a href="15pages/主页6.html" target="iframe">主页6</a></dd>
+                <dd> <a href="15pages/主页7.html" target="iframe">主页7</a></dd>
+                <dd> <a href="15pages/主页8.html" target="iframe">主页8</a></dd>
+                <dd> <a href="15pages/列表页.html" target="iframe">列表页</a></dd>
+                <dd> <a href="15pages/列表页1.html" target="iframe">列表页1</a></dd>
+                <dd> <a href="15pages/列表页2.html" target="iframe">列表页2</a></dd>
+                <dd> <a href="15pages/文章页.html" target="iframe">文章页</a></dd>
+                <dd> <a href="15pages/文章页1.html" target="iframe">文章页1</a></dd>
+
+            </dl>
+            <dl>
+                <dt>模拟电商网站</dt>
+                <dd> <a href="shop/index.html" target="iframe">index</a></dd>
+                <dd> <a href="shop/产品分类.html" target="iframe">产品分类</a></dd>
+                <dd> <a href="shop/登录界面.html" target="iframe">登录界面</a></dd>
+                <dd> <a href="shop/筛选页.html" target="iframe">筛选页</a></dd>
+                <dd> <a href="shop/详细页.html" target="iframe">详细页</a></dd>
+                <dd> <a href="shop/购物车.html" target="iframe">购物车</a></dd>
+            </dl>
+            <span>观赏</span>
+        </div>
+    </nav>
+    <iframe src="15pages/主页.html" frameborder="0" name="iframe" scrolling="auto">
+    </iframe>
+</main>
+
+
+<script src="js/jquery.js"></script>
+</body>
+</html>

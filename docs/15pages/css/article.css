@@ -1,0 +1,236 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header > div {
+  background-color: #e5e5e5;
+  font-size: 12px;
+}
+header > div p {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 3px 0;
+  color: gray;
+}
+header > div p span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+header > div p span:first-of-type {
+  font-weight: bold;
+  color: #bb0000;
+}
+header aside {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header aside div {
+  display: flex;
+  margin-top: 40px;
+}
+header aside div input {
+  outline: none;
+  height: 31px;
+  padding-left: 5px;
+}
+header aside div button {
+  font-family: 'my_font';
+  border: 1px solid gray;
+  height: 35px;
+  padding: 5px;
+  font-size: 23px;
+  border-left: none;
+  background-color: #5B951B;
+  color: white;
+}
+header nav {
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  background-color: #5B951B;
+}
+header nav a,
+header nav a:visited {
+  padding: 10px 8px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+header nav a:hover,
+header nav a:active {
+  background-color: #498116;
+  text-decoration: underline;
+  color: #CEEB37;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+main div.up {
+  display: flex;
+}
+main div.up section {
+  flex: 6;
+  align-self: flex-start;
+  border: 1px solid gainsboro;
+}
+main div.up section div.top {
+  padding: 5px 0 5px 10px;
+  background-color: #a9e087;
+  color: gray;
+}
+main div.up section div.top span {
+  color: #446e12;
+}
+main div.up section div.bottom h3 {
+  text-align: center;
+  padding: 15px 0 15px 0;
+  font-size: 16px;
+}
+main div.up section div.bottom h4 {
+  text-align: center;
+}
+main div.up section div.bottom p:first-of-type {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #b0b0b0;
+  border-bottom: 1px solid gainsboro;
+  margin: 0 15px 10px 15px;
+}
+main div.up section div.bottom p:not(:first-of-type) {
+  text-indent: 2em;
+  line-height: 25px;
+  padding: 0 25px;
+  text-align: justify;
+  margin: 20px 0;
+}
+main div.up aside {
+  flex: 1.5;
+  margin-left: 15px;
+}
+main div.up aside h4 {
+  padding: 5px 0 5px 10px;
+  border-bottom: 1px solid gainsboro;
+  background-color: gainsboro;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  color: #5B951B ;
+  font-size: 13px;
+}
+main div.up aside h4 span:last-of-type {
+  font-size: 12px;
+  font-weight: normal;
+  cursor: pointer;
+}
+main div.up aside div.top {
+  border: 1px solid gainsboro;
+}
+main div.up aside div.top > div {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+main div.up aside div.top > div div.left,
+main div.up aside div.top > div div.right {
+  display: flex;
+  flex-direction: column;
+}
+main div.up aside div.top > div div.left a,
+main div.up aside div.top > div div.right a {
+  width: 100px;
+  text-align: left;
+  cursor: pointer;
+}
+main div.up aside div.top > div div.left a:last-of-type,
+main div.up aside div.top > div div.right a:last-of-type {
+  margin-top: 5px;
+}
+main div.up aside div.top > div div.left img,
+main div.up aside div.top > div div.right img {
+  width: 98px;
+  height: 90px;
+}
+main div.up aside div.top > div div.left:first-of-type {
+  padding: 5px 1px 5px 3px;
+}
+main div.up aside div.top > div div.right {
+  padding: 5px 3px 5px 1px;
+}
+main div.up aside div.middle {
+  margin-top: 10px;
+  border: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+}
+main div.up aside div.middle a {
+  margin: 0;
+  padding: 5px 15px;
+}
+main div.up aside div.middle a img {
+  width: 100%;
+  height: 60px;
+}
+main div.up aside div.bottom {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid gainsboro;
+}
+main div.up aside div.bottom p {
+  cursor: pointer;
+  padding: 3px 0 3px 25px;
+}
+main div.up aside div.bottom p:first-of-type {
+  margin-top: 5px;
+}
+main div.up aside div.bottom p:before {
+  position: absolute;
+  font-family: 'my_font';
+  content: '\f0da';
+  color: #c90000;
+  margin-left: -13px;
+  margin-top: 3px;
+}
+main div.down {
+  border: 1px solid gainsboro;
+  margin-top: 10px;
+  padding: 9px 0 45px 8px;
+}
+main div.down b {
+  color: #5B951B;
+  margin-right: 10px;
+}
+main div.down span {
+  margin-right: 10px;
+  color: #676767;
+}
+footer {
+  background-color: gainsboro;
+  text-align: center;
+  padding: 10px 0 15px 0;
+  color: #444444;
+}
+footer p {
+  line-height: 23px;
+}
+footer p span {
+  margin: 0 10px;
+}

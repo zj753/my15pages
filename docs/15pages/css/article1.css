@@ -1,0 +1,294 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header {
+  width: 1000px;
+  margin: 0 auto;
+}
+header aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5px 0 5px;
+}
+header aside > div span {
+  color: blue;
+}
+header aside > div span:before {
+  content: '\f095';
+  position: absolute;
+  font-family: 'my_font';
+  color: #DD000C;
+  font-size: 35px;
+  transform: rotate(45deg);
+  margin-left: -25px;
+  margin-top: 3px;
+}
+
+
+header aside > div b {
+  color: #DD000C;
+  font-size: 22px;
+}
+header nav {
+  display: flex;
+  padding: 0 5px 0 5px;
+  justify-content: space-around;
+  background-color: #2B2B2B;
+}
+header nav a,
+header nav a:visited {
+  color: white;
+  padding: 10px 13px;
+  font-size: 15px;
+  text-decoration: none;
+}
+header nav a:hover,
+header nav a:active {
+  background-color: #DD000C;
+}
+header div.down {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px 5px;
+}
+header div.down .one {
+  display: flex;
+  margin: 8px 0 8px 0;
+}
+header div.down .one div.left {
+  text-align: center;
+  font-weight: 600;
+}
+header div.down .one div.left img {
+  width: 30px;
+}
+header div.down .one div.right p {
+  display: flex;
+  justify-content: space-around;
+}
+header div.down .one div.right p a {
+  padding: 5px 6px;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+main section {
+  flex: 4;
+  margin-right: 10px;
+}
+main section div.up {
+  border: 1px solid gainsboro;
+}
+main section div.up h4 {
+  padding: 4px 0 4px 20px;
+  border-bottom: 1px solid gainsboro;
+  font-weight: normal;
+}
+main section div.up h4 span {
+  font-weight: bold;
+  margin-right: 3px;
+}
+main section div.up h4 span:before {
+  content: '';
+  border: 12px solid transparent;
+  border-bottom-color: gray;
+  position: absolute;
+  transform: rotate(-45deg);
+  margin-top: -17px;
+  margin-left: -726px;
+}
+main section div.up h3 {
+  padding: 30px 0 30px;
+  text-align: center;
+  font-size: 17px;
+  color: #F6863B;
+}
+main section div.up P:first-of-type {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 12px;
+  color: gray;
+}
+main section div.up P:first-of-type span {
+  margin-left: 25px;
+}
+main section div.up P:nth-of-type(2) {
+  padding: 5px 20px 35px 20px;
+  text-indent: 2em;
+  line-height: 22px;
+  text-align: justify;
+}
+main section div.up P:nth-of-type(3),
+main section div.up P:nth-of-type(4) {
+  line-height: 22px;
+  padding-left: 30px;
+}
+main section div.up P:nth-of-type(3):before,
+main section div.up P:nth-of-type(4):before {
+  content: '\f0da';
+  position: absolute;
+  font-family: 'my_font';
+  margin-left: -6px;
+}
+main section div.up b {
+  margin-left: 60px;
+  font-size: 14px;
+}
+main section div.up span {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  font-weight: bold;
+}
+main section div.midlle {
+  border: 1px solid gainsboro;
+  margin-top: 10px;
+}
+main section div.midlle h4 {
+  border-bottom: 1px solid gainsboro;
+  padding: 3px 0 3px 10px;
+}
+main section div.midlle > div {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5px 0 5px;
+}
+main section div.midlle > div a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: #1d1d1d;
+  padding: 5px;
+}
+main section div.midlle > div a img {
+  width: 140px;
+  margin-bottom: 5px;
+}
+main section div.down {
+  border: 1px solid gainsboro;
+  margin-top: 10px;
+}
+main section div.down h4 {
+  border-bottom: 1px solid gainsboro;
+  padding: 3px 0 3px 10px;
+  margin-bottom: 15px;
+}
+main aside {
+  flex: 1.5;
+}
+main aside div.up,
+main aside div.middle,
+main aside div.down {
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+main aside div.up h4,
+main aside div.middle h4,
+main aside div.down h4 {
+  border-bottom: 1px solid gainsboro;
+  padding: 3px 0 3px 10px;
+}
+main aside div.up p {
+  cursor: pointer;
+  line-height: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 0 5px 0 15px;
+}
+main aside div.up p:last-of-type {
+  margin-bottom: 10px;
+}
+main aside div.up p span:first-child:before {
+  content: '\f0da';
+  position: absolute;
+  font-family: 'my_font';
+  margin-left: -8px;
+  color: #DD000C;
+}
+main aside div.up p span:last-child {
+  color: darkgray;
+  letter-spacing: -1.5px;
+}
+main aside div.middle P,
+main aside div.down P {
+  cursor: pointer;
+  line-height: 25px;
+  font-size: 12px;
+}
+main aside div.middle P:not(:first-of-type),
+main aside div.down P:not(:first-of-type) {
+  padding: 0 5px 0 15px;
+}
+main aside div.middle P:not(:first-of-type):before,
+main aside div.down P:not(:first-of-type):before {
+  content: '\f0da';
+  position: absolute;
+  font-family: 'my_font';
+  margin-left: -8px;
+  color: #DD000C;
+}
+main aside div.middle P:last-of-type,
+main aside div.down P:last-of-type {
+  margin-bottom: 5px;
+}
+main aside div.middle P:first-of-type,
+main aside div.down P:first-of-type {
+  display: flex;
+  justify-content: space-around;
+}
+main aside div.middle P:first-of-type a,
+main aside div.down P:first-of-type a {
+  padding: 7px 5px;
+}
+main aside div.middle P:first-of-type a img,
+main aside div.down P:first-of-type a img {
+  width: 100px;
+}
+footer {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  border-top: 3px solid #DD000C;
+  padding: 5px 0 10px 10px;
+}
+footer div.left {
+  text-align: center;
+  margin-right: 15px;
+  font-size: 12px;
+}
+footer div.left span {
+  font-family: 'my_font';
+  font-size: 25px;
+  display: block;
+  margin-top: 20px;
+  color: #DD000C;
+}
+footer div.left p {
+  margin-bottom: 15px;
+}
+footer div.right {
+  line-height: 25px;
+  color: #343434;
+}

@@ -1,0 +1,497 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header {
+  margin-bottom: 10px;
+}
+header aside {
+  color: #5d5d5d;
+}
+header aside div.one {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 3px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+header aside div.one a {
+  text-decoration: none;
+  color: #009FE9;
+}
+header aside div.one a:hover,
+header aside div.one a:active {
+  text-decoration: underline;
+}
+header div.img {
+  background: url("../img/index4.PNG") no-repeat center 30%;
+  height: 249px;
+  background-size: cover;
+}
+header nav {
+  background-color: #009FE9;
+}
+header nav p {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 5px 0 5px;
+  justify-content: space-around;
+}
+header nav p a,
+header nav p a:visited {
+  color: white;
+  padding: 10px 16px;
+  font-size: 15px;
+  text-decoration: none;
+}
+header nav p a:hover,
+header nav p a:active {
+  background-color: #0080c0;
+}
+footer {
+  margin-top: 15px;
+  width: 100%;
+  color: #C2CCCC;
+  background-color: #333333;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  line-height: 22px;
+  font-size: 12px;
+}
+footer span {
+  margin: 0 5px;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+main img {
+  height: 30px;
+}
+main a,
+main a:link {
+  text-decoration: none;
+  color: #585858;
+}
+main a:hover,
+main a:active {
+  color: #009FE9 ;
+}
+main div.section {
+  flex: 4;
+  margin-right: 15px;
+}
+main div.section div.up .right1 header,
+main div.section div.down header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+main div.section div.up .right1 header h3,
+main div.section div.down header h3 {
+  border-bottom: 2px solid #009FE9 ;
+  padding-bottom: 2px;
+}
+main div.section div.up .right1 header a,
+main div.section div.down header a {
+  font-size: 12px;
+  color: black;
+}
+main div.section div.up .right1 header a:hover,
+main div.section div.down header a:hover {
+  color: #009FE9 ;
+}
+main div.section div.up .right1 header a:before,
+main div.section div.down header a:before {
+  position: absolute;
+  font-family: 'my_font';
+  content: '\f069';
+  color: #009FE9 ;
+  margin-left: -14px;
+  margin-top: 2px;
+}
+main div.section div.up .left1 header,
+main div.section div.mid header {
+  padding: 1px 0 5px 0;
+}
+main div.section div.up .left1 header h3,
+main div.section div.mid header h3 {
+  padding: 3px 0 3px 23px;
+  width: 160px;
+  background-color: #009FE9;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 4px 0 darkgray;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 1px solid gainsboro;
+}
+main div.section div.up .left1 header h3:before,
+main div.section div.mid header h3:before {
+  position: absolute;
+  content: '\f064';
+  font-family: 'my_font';
+  margin-left: -17px;
+  margin-top: 3px;
+}
+main div.section div.up {
+  display: flex;
+  margin-bottom: 10px;
+}
+main div.section div.up div.left1 {
+  flex: 1;
+  margin-right: 15px;
+  background-color: #EBF5F7;
+  border: 1px solid gainsboro;
+  border-radius: 2px;
+}
+main div.section div.up div.left1 > a {
+  padding: 0 5px;
+  display: block;
+}
+main div.section div.up div.left1 > a img {
+  width: 280px;
+  height: 150px;
+}
+main div.section div.up div.left1 p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+main div.section div.up div.left1 p a:before,
+main div.section div.up div.left1 p span:after {
+  position: absolute;
+  font-family: 'my_font';
+  margin-top: 3px;
+  color: #009FE9 ;
+}
+main div.section div.up div.left1 p a {
+  display: inline-block;
+  margin-right: 50px;
+}
+main div.section div.up div.left1 p a:before {
+  content: '\f0d9';
+  margin-left: -10px;
+}
+main div.section div.up div.left1 p span:after {
+  content: '\f0da';
+  margin-left: 6px;
+}
+main div.section div.up div.right1 {
+  flex: 1.68;
+  background-color: #EBF5F7;
+  border: 1px solid gainsboro;
+}
+main div.section div.up div.right1 h4 {
+  color: #009FE9 ;
+  padding: 7px 0 7px 25px;
+}
+main div.section div.up div.right1 h4:first-of-type {
+  margin-top: -15px;
+}
+main div.section div.up div.right1 div.down1 {
+  display: flex;
+}
+main div.section div.up div.right1 div.down1 div.le {
+  flex: 1.5;
+}
+main div.section div.up div.right1 div.down1 div.le a {
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+main div.section div.up div.right1 div.down1 div.le a img {
+  width: 80%;
+  height: 60px;
+}
+main div.section div.up div.right1 div.down1 div.ri {
+  flex: 5;
+  line-height: 22px;
+  text-indent: 2em;
+}
+main div.section div.mid {
+  background-color: #EBF5F7;
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+main div.section div.mid div.one {
+  display: flex;
+  border-bottom: 1px dashed gainsboro;
+}
+main div.section div.mid div.one:nth-of-type(4) {
+  border-bottom: none;
+}
+main div.section div.mid div.one:first-of-type {
+  margin-top: -10px;
+}
+main div.section div.mid div.one div.le {
+  flex: 2.3;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+main div.section div.mid div.one div.le h4 {
+  background-color: #009FE9 ;
+  width: 100px;
+  padding: 3px 0;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+main div.section div.mid div.one div.ri {
+  flex: 7;
+}
+main div.section div.mid div.one div.ri p {
+  padding: 5px 0 5px;
+  color: dimgrey;
+}
+main div.section div.mid div.one div.ri p span {
+  margin-right: 40px;
+}
+main div.section div.mid div.one div.ri p:first-of-type {
+  border-bottom: 1px dashed gainsboro;
+}
+main div.section div.mid div.one:last-of-type {
+  margin-bottom: 10px;
+  border-bottom: none;
+}
+main div.section div.down {
+  display: flex;
+}
+main div.section div.down div.left1 {
+  background-color: #EBF5F7;
+  border: 1px solid gainsboro;
+  flex: 1;
+  margin-right: 10px;
+}
+main div.section div.down div.left1 p {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 5px 3px 25px;
+  border-bottom: 1px solid gainsboro;
+}
+main div.section div.down div.left1 p span:before,
+main div.section div.down div.left1 p a:before {
+  position: absolute;
+  font-family: 'my_font';
+  margin-top: 2px;
+}
+main div.section div.down div.left1 p span:before {
+  content: '\f0c7';
+  margin-left: -15px;
+}
+main div.section div.down div.left1 p a:before {
+  content: '\f101';
+  color: #009FE9 ;
+  margin-left: -13px;
+  font-size: 15px;
+}
+main div.section div.down div.right1 {
+  background-color: #EBF5F7;
+  border: 1px solid gainsboro;
+  flex: 3;
+}
+main div.section div.down div.right1 > div {
+  display: flex;
+}
+main div.section div.down div.right1 > div div.le,
+main div.section div.down div.right1 > div div.ri {
+  flex: 1;
+  padding: 0 30px 0 10px;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+main div.section div.down div.right1 > div div.le p,
+main div.section div.down div.right1 > div div.ri p {
+  color: #FF7F27;
+  padding: 0 0 5px 0;
+  margin-top: -10px;
+  border-bottom: 1px solid gainsboro;
+}
+main div.section div.down div.right1 > div div.le a,
+main div.section div.down div.right1 > div div.ri a {
+  display: block;
+  width: 100%;
+}
+main div.section div.down div.right1 > div div.le a:first-of-type,
+main div.section div.down div.right1 > div div.ri a:first-of-type {
+  padding: 10px;
+}
+main div.section div.down div.right1 > div div.le a img,
+main div.section div.down div.right1 > div div.ri a img {
+  width: 100%;
+  height: 140px;
+}
+main div.section div.down div.right1 > div div.le a:last-of-type,
+main div.section div.down div.right1 > div div.ri a:last-of-type {
+  text-align: center;
+  display: flex;
+  margin-top: -5px;
+}
+main div.section div.down div.right1 > div div.le a:last-of-type span,
+main div.section div.down div.right1 > div div.ri a:last-of-type span {
+  font-family: 'my_font';
+}
+main div.section div.down div.right1 > div div.le a:last-of-type span:first-of-type,
+main div.section div.down div.right1 > div div.ri a:last-of-type span:first-of-type,
+main div.section div.down div.right1 > div div.le a:last-of-type span:last-of-type,
+main div.section div.down div.right1 > div div.ri a:last-of-type span:last-of-type {
+  flex: 1;
+  font-size: 23px;
+  margin-top: -5px;
+  color: #009FE9 ;
+}
+main div.section div.down div.right1 > div div.le a:last-of-type span:first-of-type,
+main div.section div.down div.right1 > div div.ri a:last-of-type span:first-of-type {
+  text-align: left;
+  padding-left: 15px;
+}
+main div.section div.down div.right1 > div div.le a:last-of-type span:nth-of-type(2),
+main div.section div.down div.right1 > div div.ri a:last-of-type span:nth-of-type(2) {
+  flex: 3;
+}
+main div.section div.down div.right1 > div div.le a:last-of-type span:last-of-type,
+main div.section div.down div.right1 > div div.ri a:last-of-type span:last-of-type {
+  text-align: right;
+  margin-right: -5px;
+}
+main div.aside {
+  flex: 1.01;
+}
+main div.aside div.up,
+main div.aside div.mid,
+main div.aside div.down {
+  background-color: #EBF5F7;
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+main div.aside div.up header {
+  padding: 1px 0 5px 0;
+}
+main div.aside div.up header h3 {
+  padding: 3px 0 3px 23px;
+  width: 120px;
+  background-color: #009FE9;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 4px 0 darkgray;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 1px solid gainsboro;
+}
+main div.aside div.up header h3:before {
+  position: absolute;
+  content: '\f064';
+  font-family: 'my_font';
+  margin-left: -17px;
+  margin-top: 3px;
+}
+main div.aside div.up a {
+  display: block;
+  padding: 0 10px 10px 10px;
+}
+main div.aside div.up a img {
+  width: 100%;
+  height: 60px;
+}
+main div.aside div.mid header,
+main div.aside div.down header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+main div.aside div.mid header h3,
+main div.aside div.down header h3 {
+  border-bottom: 2px solid #009FE9 ;
+  padding-bottom: 2px;
+}
+main div.aside div.mid header a,
+main div.aside div.down header a {
+  font-size: 12px;
+  color: black;
+}
+main div.aside div.mid header a:hover,
+main div.aside div.down header a:hover {
+  color: #009FE9 ;
+}
+main div.aside div.mid header a:before,
+main div.aside div.down header a:before {
+  position: absolute;
+  font-family: 'my_font';
+  content: '\f069';
+  color: #009FE9 ;
+  margin-left: -14px;
+  margin-top: 2px;
+}
+main div.aside div.mid > a {
+  display: block;
+  padding: 3px 0 2px 30px;
+}
+main div.aside div.mid > a:first-of-type {
+  margin-top: -12px;
+}
+main div.aside div.mid > a:last-of-type {
+  padding-bottom: 7px;
+}
+main div.aside div.mid > a:not(:last-of-type) {
+  border-bottom: 1px solid gainsboro;
+  box-sizing: border-box;
+}
+main div.aside div.mid > a:before {
+  position: absolute;
+  content: '\f0c7';
+  font-family: 'my_font';
+  margin-left: -21px;
+  margin-top: 2px;
+  color: #009FE9 ;
+}
+main div.aside div.mid > a:after {
+  position: absolute;
+  content: '\f103';
+  font-family: 'my_font';
+  color: #009FE9 ;
+  margin-top: 2px;
+  margin-left: 14px;
+}
+main div.aside div.down > a {
+  padding: 5px 5px 5px 30px;
+  display: block;
+  color: #8c8c8c;
+}
+main div.aside div.down > a:first-of-type {
+  margin-top: -5px;
+  border-bottom: 1px solid gainsboro;
+}
+main div.aside div.down > a p {
+  line-height: 29px;
+}
+main div.aside div.down > a p:last-of-type {
+  padding-bottom: 1px;
+}
+main div.aside div.down > a:before {
+  position: absolute;
+  content: '\f0f6';
+  font-family: 'my_font';
+  margin-left: -26px;
+  font-size: 24px;
+  margin-top: 20px;
+}

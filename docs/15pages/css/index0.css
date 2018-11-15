@@ -1,0 +1,340 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+  color: #5e5e5e;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header {
+  width: 100%;
+  margin-bottom: 30px;
+}
+header aside {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5px 0 5px;
+  margin-bottom: 10px;
+}
+header aside > div span {
+  color: blue;
+}
+header aside > div span:before {
+  content: '\f095';
+  position: absolute;
+  font-family: 'my_font';
+  color: #DD000C;
+  font-size: 35px;
+  transform: rotate(45deg);
+  margin-left: -25px;
+  margin-top: 3px;
+}
+header aside > div b {
+  color: #DD000C;
+  font-size: 22px;
+}
+header nav {
+  background-color: #2B2B2B;
+}
+header nav p {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 5px 0 5px;
+  justify-content: space-around;
+}
+header nav p a,
+header nav p a:visited {
+  color: white;
+  padding: 10px 13px;
+  font-size: 15px;
+  text-decoration: none;
+}
+header nav p a:hover,
+header nav p a:active {
+  background-color: #DD000C;
+}
+header div.down {
+  background: url("../img/index01.PNG") no-repeat center 5%;
+  background-size: cover;
+  background-color: gray;
+  height: 260px;
+}
+header div.down section {
+  width: 1000px;
+  margin: 0 auto;
+  background: url("../img/index03.PNG") no-repeat center 5%;
+  height: 100%;
+  background-size: cover;
+}
+header div.down section:before {
+  content: '\f053';
+  font-family: 'my_font';
+  position: absolute;
+  font-size: 35px;
+  color: #707070;
+  margin-left: -40px;
+  margin-top: 100px;
+}
+header div.down section:after {
+  content: '\f054';
+  font-family: 'my_font';
+  position: absolute;
+  font-size: 35px;
+  color: #707070;
+  margin-left: 1010px;
+  margin-top: 100px;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+main div.left,
+main div.mid {
+  margin-right: 20px;
+}
+main div.left,
+main div.mid,
+main div.right {
+  overflow: hidden;
+  flex: 1;
+  border: 1px solid #d8d8d8;
+}
+main div.left h3,
+main div.mid h3,
+main div.right h3 {
+  font-size: 17px;
+  color: dimgrey;
+}
+main div.left h4,
+main div.mid h4,
+main div.right h4 {
+  font-size: 16px;
+  color: darkgrey;
+  border-bottom: 3px solid dimgrey;
+  margin-bottom: 8px;
+}
+main div.left div.up a,
+main div.mid div.up a,
+main div.right div.up a {
+  width: 100%;
+}
+main div.left div.up a img,
+main div.mid div.up a img,
+main div.right div.up a img {
+  width: 100%;
+  height: 200px;
+}
+main div.left div.up p,
+main div.mid div.up p,
+main div.right div.up p {
+  margin-top: 1px;
+  margin-bottom: 25px;
+}
+main div.left b,
+main div.mid b,
+main div.right b {
+  font-weight: bold;
+  color: #454545;
+}
+main div.left p,
+main div.mid p,
+main div.right p {
+  line-height: 19px;
+  text-align: justify;
+}
+main div.left div.down,
+main div.mid div.down,
+main div.right div.down {
+  padding-right: 25px;
+  overflow: hidden;
+}
+main div.left div.down:before,
+main div.mid div.down:before,
+main div.right div.down:before {
+  position: absolute;
+  width: 16px;
+  height: 100px;
+  background-color: white;
+  content: '';
+  margin-top: -50px;
+  margin-left: 319px;
+  z-index: 33;
+}
+main div.left div.down:after,
+main div.mid div.down:after,
+main div.right div.down:after {
+  content: '1';
+  position: absolute;
+  font-size: 66px;
+  font-weight: bold;
+  color: darkgray;
+  margin-top: -390px;
+  margin-left: 292px;
+}
+main div.left div.down h4 {
+  width: 75px;
+}
+main div.left div.down span {
+  display: block;
+  background-color: darkgray;
+  color: white;
+  width: 55px;
+  font-size: 12px;
+  margin: 3px 0;
+}
+main div.mid div.down:after {
+  content: '2';
+}
+main div.mid div.down h4 {
+  width: 70px;
+}
+main div.mid div.down div.down1 {
+  display: flex;
+  margin-bottom: 5px;
+}
+main div.mid div.down div.down1 div.left {
+  flex: 1.3;
+  border: none;
+}
+main div.mid div.down div.down1 div.left a {
+  width: 100%;
+}
+main div.mid div.down div.down1 div.left a img {
+  width: 100%;
+  height: 90px;
+}
+main div.mid div.down div.down1 div.right {
+  flex: 2;
+  border: none;
+  margin-left: -10px;
+}
+main div.right div.down:after {
+  content: '3';
+}
+main div.right div.down h4 {
+  width: 83px;
+}
+main div.right div.down p > a {
+  margin-left: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #006ea5;
+}
+main div.right div.down > a:first-of-type {
+  width: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+main div.right div.down > a:first-of-type img {
+  width: 100%;
+  height: 120px;
+}
+main div.right div.down > a:not(:first-of-type) {
+  display: block;
+  padding-left: 15px;
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #5e5e5e;
+}
+main div.right div.down > a:not(:first-of-type):hover {
+  text-decoration: underline;
+  color: #0077CB;
+}
+main div.right div.down > a:not(:first-of-type):before {
+  content: '\f0da';
+  font-family: 'my_font';
+  position: absolute;
+  color: red;
+  margin-left: -8px;
+}
+footer {
+  padding: 10px 0;
+  background-color: #282828;
+  color: #7E7E7E;
+  margin-top: 15px;
+}
+footer div.fo {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+footer div.fo div.left h2 {
+  font-size: 33px;
+  font-weight: bold;
+  color: white;
+}
+footer div.fo div.left h2 span {
+  color: #DD000C;
+}
+footer div.fo div.right {
+  text-align: right;
+  padding: 40px 65px 0 0;
+}
+footer div.fo div.right:after {
+  position: absolute;
+  font-family: 'my_font';
+  content: '\f041';
+  font-size: 44px;
+  margin-top: -50px;
+  margin-left: 20px;
+}
+.fix {
+  position: fixed;
+  right: 80px;
+  top: 120px;
+  width: 100px;
+  background: linear-gradient(#454545, #8e8e8e, #1d1d1d);
+  box-shadow: 0 1px 5px 0 gray;
+  padding: 10px;
+}
+.fix a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 20px;
+}
+.fix a img {
+  width: 100%;
+  border-radius: 5px;
+}
+.fix a span {
+  font-family: 'my_font';
+  position: absolute;
+  margin-left: -15px;
+  margin-top: 1px;
+  color: #cb6a4f;
+}
+.fix a:hover {
+  text-decoration: underline;
+  color: #cb6a4f;
+}
+.fix h2 {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.fix p {
+  font-size: 12px;
+  color: #eaeaea;
+}

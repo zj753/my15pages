@@ -1,0 +1,284 @@
+@charset "UTF-8";
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-size: 13px;
+}
+.bcenter{
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'),
+  url('../fonts/icomoon.svg') format('svg'),
+  url('../fonts/icomoon.ttf') format('ttf'),
+  url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+footer{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+ background-color: #333333;
+  padding: 10px 0 20px 0;
+  line-height: 28px;
+  color: white;
+  span{
+    margin: 0 6px ;
+  }
+}
+header{
+  aside{
+    .bcenter;
+    display: flex;
+    justify-content:space-between;
+
+    >div{
+      display: flex;
+      a{
+        width: 100px;
+        img{
+          width: 100%;
+        }
+      }
+      >div{
+        margin-left: 10px;
+        color: #0E4C80;
+        h2{
+          margin-top: 10px;
+        }
+        p{
+          margin-top: 2px;
+          font-size: 12px;
+        }
+      }
+    }
+   >p{
+        margin-top: 20px;
+        text-align: right;
+     margin-right: 2px;
+        span{
+          background: linear-gradient(#009FE9, #8abde2);
+          color: white;
+          display: inline-block;
+          height: 26px;
+          margin-top: -5px;
+          line-height: 26px;
+          padding: 0 3px;
+          font-size: 12px;
+          padding-left: 20px;
+          padding-right: 3px;
+          &:before{
+            position: absolute;
+            content: '\f002';
+            font-family: 'my_font';
+            margin-left: -15px;
+            margin-top: 1px;
+            color: white;
+          }
+        }
+
+        input{
+          height: 22px;
+          &:last-of-type{
+            width: 170px;
+            margin-left: 10px;
+            margin-right: -10px;
+          }
+        }
+      }
+  }
+  nav{
+    background-color: #009FE9;
+    p{
+      .bcenter;
+      padding: 9px 0 9px 0;
+
+      display: flex;
+      justify-content: space-around;
+      .bcenter;
+      a:first-child{
+        border-left:none;
+      }
+      a:last-child{
+        border-right: none;
+      }
+      a,a:visited{
+        flex: 1;
+        padding: 1px 0;
+        text-align: center;
+        border-right: 1px solid #8c8c8c;
+        border-left:1px solid #0094D9 ;
+        color: white;
+        text-decoration: none;
+
+      }
+
+      a:hover,a:active{
+       color:black;
+      }
+
+    }
+
+  }
+  div.img{
+    .bcenter;
+    height: 249px;
+    background: url("../img/in70.PNG");
+
+  }
+}
+main{
+  a,a:link{
+    text-decoration: none;
+    color: #575757;
+    line-height: 23px;
+    display:block;
+  }
+  a:hover,a:active{
+    text-decoration: underline;
+    color: #009FE9;
+  }
+  .bcenter;
+  >p:first-of-type{
+    padding: 5px 0 5px 15px;
+    font-size: 12px;
+    span{
+      font-weight: bold;
+      color: #009FE9;
+      font-size: 13px;
+    }
+  }
+  >div.up div.left, >div.up div.right,>div.down div.right{
+    border: 1px solid #82D9EA;
+    flex: 1.2;
+    a{
+      padding-left: 22px;
+      &:before{
+        position: absolute;
+        content: '\f0da';
+        font-family: 'my_font';
+        margin-top: 2px;
+        margin-left: -12px;
+        color: #009FE9;
+      }
+    }
+    header{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0 5px 20px;
+      background-color: #009FE9;
+      color: white;
+      a{
+        color: white;
+        padding-right: 25px;
+        font-size: 12px;
+        margin-top: 2px;
+        &:after{
+          position: absolute;
+          content: '\f054';
+          font-family: 'my_font';
+          margin-left: 7px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  >div.up div.mid,>div.down div.mid{
+    padding: 0 2px 0 2px;
+    h3{
+      padding: 6px 0 6px 10px;
+      border-bottom: 1px solid #009FE9;
+      font-weight: 600;
+
+    }
+    a{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px 0 5px;
+    }
+  }
+  >div.up{
+    display: flex;
+    div.mid{
+      flex: 2;
+      margin: 0 10px;
+      border: 1px solid #82D9EA;
+    }
+  }
+  >div.mid{
+    background: url("../img/cha1.PNG") no-repeat 10%;
+    height: 100px;
+    border: 1px solid #82D9EA;
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  >div.down{
+    display: flex;
+    div.left{
+      flex: 0.8;
+
+      a{
+        background: linear-gradient(#009FE9,#82D9EA, #9ee4ff);
+        box-shadow: 2px 2px 4px 1px darkgray;
+        padding: 20px 10px 20px 30px;
+        text-align: right;
+        margin-bottom: 15px;
+        color: white;
+        font-size: 18px;
+        &:before{
+          position: absolute;
+          font-family: 'my_font';
+          margin-top: 2px;
+          margin-left: -60px;
+          font-size: 35px;
+          color: #009FE9;
+          color: white;
+        }
+        &:first-of-type:before{
+          content: '\f1d9';
+        }
+        &:nth-of-type(2):before{
+          content: '\f091';
+        }
+        &:last-of-type:before{
+          content: '\f095';
+        }
+      }
+    }
+    div.mid{
+      flex: 2.4;
+      margin: 0 10px;
+      border: 1px solid #82D9EA;
+      a{
+        padding-left: 13px;
+        &:before{
+          position: absolute;
+          font-family: 'my_font';
+          content: '\f0da';
+          margin-top: 2px;
+          margin-left: -8px;
+          color: #009FE9;
+        }
+      }
+    }
+  }
+  >p:last-of-type{
+    border: 1px #b5d0ff solid;
+    margin-top: 15px;
+    padding: 3px 5px;
+    font-size: 12px;
+    a{
+      display: inline-block;
+      margin: 0 2px;
+    }
+    b{
+      color: #e37d57;
+      margin-right: 10px;
+    }
+  }
+}

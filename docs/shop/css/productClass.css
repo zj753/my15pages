@@ -1,0 +1,116 @@
+@charset "UTF-8";
+main {
+  width: 1000px;
+  margin: 15px auto 40px;
+  display: flex;
+}
+main aside {
+  width: 185px;
+  border: 1px solid #D0D2CF;
+  margin-right: 5px;
+  background-color: #F3F3F3;
+  align-self: flex-start;
+}
+main aside header {
+  padding: 10px 0;
+  border-bottom: 1px solid #D0D2CF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+main aside dl {
+  line-height: 25px;
+  font-size: 12px;
+  padding: 5px 0px 5px 20px;
+}
+main aside dl:not(:last-child) {
+  border-bottom: 1px solid #D0D2CF;
+}
+main aside dl dt {
+  font-weight: bold;
+  font-size: 13px;
+}
+main aside dl a,
+main aside dl a:visited {
+  display: inline-block;
+  width: 70px;
+  color: black;
+  text-decoration: none;
+}
+main section {
+  flex: 1;
+}
+main section .up {
+  padding: 5px;
+}
+main section .up img {
+  width: 100%;
+}
+main section .mid:after,
+main section .mid_down:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+main section .mid header,
+main section .mid_down header {
+  padding: 15px;
+  border-bottom: 2px solid #cdcdcd;
+  font-weight: 500;
+  font-size: 17px;
+  color: #444444;
+}
+main section .mid header:before,
+main section .mid_down header:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 180px;
+  background-color: #086DBB;
+  margin-top: 36px;
+  margin-left: -15px;
+}
+main section .mid figure,
+main section .mid_down figure {
+  width: 202px;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  text-align: center;
+}
+main section .mid figure a,
+main section .mid_down figure a,
+main section .mid figure a:visited,
+main section .mid_down figure a:visited {
+  width: 100%;
+  height: 162px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .mid figure figcaption,
+main section .mid_down figure figcaption {
+  text-align: justify;
+  line-height: 18px;
+  color: #343434;
+}
+main section .mid figure figcaption p,
+main section .mid_down figure figcaption p {
+  margin-bottom: 20px;
+}
+main section .mid figure figcaption p:last-child i,
+main section .mid_down figure figcaption p:last-child i {
+  font-family: 'myfont';
+  color: #FDA22F;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+main section .mid figure figcaption p span,
+main section .mid_down figure figcaption p span {
+  color: #015F9C;
+}
+main section .mid figure figcaption b,
+main section .mid_down figure figcaption b {
+  color: #D0105D;
+}

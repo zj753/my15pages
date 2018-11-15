@@ -1,0 +1,258 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header aside {
+  padding: 3px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  background: linear-gradient(#ffffff, #dcdcdc);
+}
+header aside span {
+  color: dimgrey;
+}
+header aside a {
+  text-decoration: none;
+  color: #1E50AE;
+}
+header aside a:hover,
+header aside a:active {
+  text-decoration: underline;
+}
+header div.img {
+  background: url("../img/index1.PNG") no-repeat;
+  height: 249px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 70px;
+  background: linear-gradient(#88aff0, #4366e5, #076ce0);
+}
+header nav div.left {
+  width: 480px;
+  display: flex;
+  justify-content: space-around;
+}
+header nav div.left a {
+  padding: 3px 15px;
+  text-decoration: none;
+  color: white;
+}
+header nav div.left a:first-of-type {
+  background-color: white;
+  color: #076CE0 ;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+header nav div.left a:not(:first-of-type) {
+  padding: 3px 22px;
+  border-left: 1px solid gray;
+  border-right: 1px solid blue;
+}
+header nav div.left a:hover {
+  background-color: white;
+  color: #076CE0 ;
+  border-radius: 5px;
+}
+header nav span {
+  display: flex;
+  padding-top: 3px;
+  color: white;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  color: #010101;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #2C68E3;
+}
+main p {
+  line-height: 23px;
+}
+main div.one {
+  margin: 10px 0;
+  display: flex;
+}
+main div.one div.left h3,
+main div.one div.right h3 {
+  font-family: 'my_font';
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+main div.one div.left h3 a,
+main div.one div.right h3 a {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'my_font';
+  background-color: white;
+  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: #2C68E3;
+}
+main div.one div.left h3 a:hover,
+main div.one div.right h3 a:hover {
+  text-decoration: underline;
+}
+main div.one div.left {
+  flex: 1;
+  background-color: #E0F1F9;
+  border-radius: 5px;
+}
+main div.one div.left h3 {
+  color: #2C68E3;
+}
+main div.one div.left p {
+  margin: 3px 5px 5px 5px;
+  padding: 8px 7px 7px 7px;
+  text-indent: 2em;
+  text-align: justify;
+  background-color: white;
+  border-radius: 5px;
+}
+main div.one div.mid {
+  flex: 1.3;
+  margin-left: 15px;
+}
+main div.one div.mid a {
+  width: 100%;
+}
+main div.one div.mid a img {
+  width: 100%;
+  height: 98%;
+  border: 1px lightgray solid;
+}
+main div.one div.right {
+  flex: 2;
+  margin-left: 15px;
+  border: 1px lightgray solid;
+}
+main div.one div.right h3 {
+  border-bottom: 1px lightgray solid;
+}
+main div.one div.right h3 b {
+  background: linear-gradient(#88aff0, #4366e5, #076ce0);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin-left: -5px;
+}
+main div.one div.right p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  line-height: 22px;
+}
+main div.one div.right p:last-of-type {
+  padding-bottom: 3px;
+}
+main div.one div.right p span {
+  font-size: 12px;
+}
+main div.two {
+  display: flex;
+}
+main div.two div.left,
+main div.two div.mid1,
+main div.two div.mid2,
+main div.two div.right {
+  border: 1px lightgray solid;
+}
+main div.two div.left h3,
+main div.two div.mid1 h3,
+main div.two div.mid2 h3,
+main div.two div.right h3 {
+  padding: 3px 0;
+  font-size: 14px;
+  background: linear-gradient(#ffffff, #e7e7e7);
+}
+main div.two div.left a,
+main div.two div.mid1 a,
+main div.two div.mid2 a,
+main div.two div.right a {
+  padding: 4px 0 4px 10px;
+  display: block;
+}
+main div.two div.left a:last-of-type,
+main div.two div.mid1 a:last-of-type,
+main div.two div.mid2 a:last-of-type,
+main div.two div.right a:last-of-type {
+  margin-bottom: 4px;
+}
+main div.two div.right,
+main div.two div.mid1,
+main div.two div.mid2 {
+  flex: 1.1;
+  margin-left: 15px;
+}
+main div.two div.right h3,
+main div.two div.mid1 h3,
+main div.two div.mid2 h3 {
+  color: #2C68E3;
+  border-bottom: 2px solid  #2C68E3;
+  padding-left: 20px;
+}
+main div.two div.right h3:before,
+main div.two div.mid1 h3:before,
+main div.two div.mid2 h3:before {
+  content: '\f0da';
+  position: absolute;
+  font-family: 'my_font';
+  margin-left: -10px;
+  margin-top: 3px;
+  color: #FFBB44;
+}
+main div.two div.left {
+  flex: 1.02;
+}
+main div.two div.left h3 span {
+  background: linear-gradient(#88aff0, #4366e5, #076ce0);
+  color: white;
+  padding: 2px 10px;
+}
+main div.two div.left a:not(:last-of-type) {
+  border-bottom: 1px lightgray dashed;
+}
+main > p {
+  border: 1px #b5d0ff solid;
+  margin-top: 15px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+main > p b {
+  color: #2C68E3;
+  margin-right: 10px;
+  font-size: 15px;
+}
+footer {
+  background: url("../img/footer.jpg") no-repeat 95% 76%;
+  padding: 20px 0 50px 0;
+  text-align: center;
+  line-height: 24px;
+}

@@ -1,0 +1,456 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 12px;
+  background-color: #EEF3FA;
+  width: 1000px;
+  margin: 0 auto;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px 0 20px 0;
+  line-height: 28px;
+  color: #4d4d4d;
+}
+footer span {
+  margin: 0 6px ;
+}
+header {
+  padding-top: 10px;
+}
+header aside {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+header aside > div.left {
+  display: flex;
+}
+header aside > div.left a {
+  width: 100px;
+}
+header aside > div.left a img {
+  width: 100%;
+}
+header aside > div.left > div {
+  margin-left: 10px;
+  color: #0E4C80;
+}
+header aside > div.left > div h2 {
+  margin-top: 10px;
+}
+header aside > div.left > div p {
+  margin-top: 2px;
+  font-size: 12px;
+}
+header aside > div.right {
+  font-size: 12px;
+}
+header aside > div.right p {
+  line-height: 29px;
+  text-align: right;
+}
+header aside > div.right p a {
+  margin-left: 5px;
+  color: #009FE9;
+  text-decoration: none;
+}
+header aside > div.right p a:hover {
+  text-decoration: underline;
+}
+header aside > div.right p a:first-of-type {
+  margin-right: 5px;
+}
+header nav {
+  background-color: #009FE9;
+}
+header nav p {
+  padding: 9px 0 9px 0;
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  margin: 0 auto;
+}
+header nav p a:first-child {
+  border-left: none;
+}
+header nav p a:last-child {
+  border-right: none;
+}
+header nav p a,
+header nav p a:visited {
+  flex: 1;
+  padding: 1px 0;
+  text-align: center;
+  border-right: 1px solid #8c8c8c;
+  border-left: 1px solid #0094D9 ;
+  color: white;
+  text-decoration: none;
+}
+header nav p a:hover,
+header nav p a:active {
+  color: black;
+}
+main {
+  margin: 15px 0;
+  display: flex;
+}
+main a,
+main a:link {
+  text-decoration: none;
+  color: #575757;
+  line-height: 23px;
+  display: block;
+}
+main a:hover,
+main a:active {
+  text-decoration: underline;
+  color: #009FE9;
+}
+main img {
+  width: 50px;
+}
+main > aside {
+  flex: 1;
+}
+main > aside header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background: linear-gradient(#6abced, #caebff);
+  color: #009FE9;
+}
+main > aside header h3 {
+  padding: 3px 0 3px 30px;
+  font-size: 15px;
+}
+main > aside header h3:before {
+  position: absolute;
+  content: '\f06b';
+  font-family: 'my_font';
+  margin-left: -18px;
+  margin-top: 4px;
+  color: #009FE9;
+}
+main > aside header a {
+  color: white;
+  padding-right: 25px;
+  font-size: 12px;
+}
+main > aside header a:after {
+  position: absolute;
+  content: '\f101';
+  font-family: 'my_font';
+  margin-left: 7px;
+  margin-top: 2px;
+}
+main > aside div.up,
+main > aside div.mid1,
+main > aside div.mid2,
+main > aside div.down {
+  border: 1px solid #82D9EA;
+  margin-bottom: 10px;
+}
+main > aside div.up > a,
+main > aside div.mid1 > a,
+main > aside div.mid2 > a,
+main > aside div.down > a {
+  padding-left: 22px;
+  border: 1px dashed #e2e2e2;
+}
+main > aside div.up > a:before,
+main > aside div.mid1 > a:before,
+main > aside div.mid2 > a:before,
+main > aside div.down > a:before {
+  position: absolute;
+  content: '\f0da';
+  font-family: 'my_font';
+  margin-top: 2px;
+  margin-left: -12px;
+  color: #009FE9;
+}
+main > section {
+  flex: 3.5;
+  margin-left: 10px;
+}
+main > section > div.up {
+  display: flex;
+}
+main > section > div.up > div.left {
+  border: 1px solid #82D9EA;
+  flex: 2.2;
+  margin-right: 10px;
+}
+main > section > div.up > div.left a {
+  width: 100%;
+}
+main > section > div.up > div.left a img {
+  width: 100%;
+  height: 243px;
+}
+main > section > div.up > div.right {
+  flex: 1;
+}
+main > section > div.up > div.right > div.up {
+  border: 1px solid #82D9EA;
+  padding: 10px;
+}
+main > section > div.up > div.right > div.up h4 {
+  padding: 0 0 10px 25px;
+  color: #ffa517;
+  font-size: 14px;
+}
+main > section > div.up > div.right > div.up h4:before {
+  position: absolute;
+  content: '\f023';
+  font-family: 'my_font';
+  margin-top: 3px;
+  margin-left: -15px;
+  color: #ffa517;
+  font-size: 15px;
+}
+main > section > div.up > div.right > div.up label {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0 0 0 20px;
+}
+main > section > div.up > div.right > div.up label input {
+  width: 120px;
+  margin-left: 6px;
+}
+main > section > div.up > div.right > div.up p {
+  margin-left: 40px;
+}
+main > section > div.up > div.right > div.up p button {
+  outline: none;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 12px;
+  border: none;
+  background-color: #009FE9;
+  color: white;
+  padding: 2px 5px;
+}
+main > section > div.up > div.right > div.down {
+  width: 100%;
+  padding: 0 5%;
+}
+main > section > div.up > div.right > div.down a {
+  width: 90%;
+  padding: 7px 0 7px 35px;
+  border: 1px solid #d9dee2;
+  box-sizing: border-box;
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #009FE9;
+  background: linear-gradient(#f5fef6, #d9dee2, #f3f6fd);
+}
+main > section > div.up > div.right > div.down a:before {
+  position: absolute;
+  content: '\f272';
+  font-family: 'my_font';
+  margin-top: -1px;
+  margin-left: -23px;
+  color: #ffa517;
+  font-size: 17px;
+}
+main > section > div.mid {
+  display: flex;
+  margin: 10px 0;
+}
+main > section > div.mid div.left {
+  flex: 2.2;
+  margin-right: 10px;
+}
+main > section > div.mid div.left header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  box-shadow: 0 1px 3px 1px gainsboro;
+  color: #009FE9;
+}
+main > section > div.mid div.left header h3 {
+  padding: 3px 0 3px 30px;
+  font-size: 15px;
+  width: 100px;
+  background: linear-gradient(#6abced, #caebff);
+}
+main > section > div.mid div.left header h3:before {
+  position: absolute;
+  content: '\f06b';
+  font-family: 'my_font';
+  margin-left: -18px;
+  margin-top: 4px;
+  color: #009FE9;
+}
+main > section > div.mid div.left header a {
+  color: #009FE9;
+  padding-right: 25px;
+  font-size: 12px;
+}
+main > section > div.mid div.left header a:after {
+  position: absolute;
+  content: '\f101';
+  font-family: 'my_font';
+  margin-left: 7px;
+  margin-top: 2px;
+}
+main > section > div.mid div.left div.top {
+  border: 1px solid #82D9EA;
+}
+main > section > div.mid div.left div.top > div {
+  padding: 11px 5px 12px 5px;
+  text-indent: 2em;
+  line-height: 21px;
+  text-align: justify;
+}
+main > section > div.mid div.left div.top > div img {
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+  height: 105px;
+}
+main > section > div.mid div.left div.top > div a {
+  display: inline-block;
+  color: #009FE9;
+}
+main > section > div.mid div.left div.bottom {
+  margin: 10px 0;
+  border: 1px solid #82D9EA;
+}
+main > section > div.mid div.left div.bottom > a {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 5px;
+  padding-left: 13px;
+  border: 1px dashed #e2e2e2;
+}
+main > section > div.mid div.left div.bottom > a:before {
+  position: absolute;
+  font-family: 'my_font';
+  content: '\f0da';
+  margin-top: 2px;
+  margin-left: -8px;
+  color: #009FE9;
+}
+main > section > div.mid > div.right {
+  border: 1px solid #82D9EA;
+  align-self: baseline;
+  flex: 1;
+}
+main > section > div.mid > div.right header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background: linear-gradient(#6abced, #caebff);
+  color: #009FE9;
+}
+main > section > div.mid > div.right header h3 {
+  padding: 3px 0 3px 30px;
+  font-size: 15px;
+}
+main > section > div.mid > div.right header h3:before {
+  position: absolute;
+  content: '\f06b';
+  font-family: 'my_font';
+  margin-left: -18px;
+  margin-top: 4px;
+  color: #009FE9;
+}
+main > section > div.mid > div.right header a {
+  color: white;
+  padding-right: 25px;
+  font-size: 12px;
+}
+main > section > div.mid > div.right header a:after {
+  position: absolute;
+  content: '\f101';
+  font-family: 'my_font';
+  margin-left: 7px;
+  margin-top: 2px;
+}
+main > section > div.mid > div.right div.one {
+  display: flex;
+  border-bottom: 1px dashed #e2e2e2;
+}
+main > section > div.mid > div.right div.one a {
+  flex: 1;
+  padding: 3px 0 1px 5px;
+}
+main > section > div.mid > div.right div.one a:first-child {
+  margin-top: 0.5px;
+}
+main > section > div.mid > div.right div.one a img {
+  width: 100%;
+  height: 50px;
+}
+main > section > div.mid > div.right div.one > div {
+  flex: 2.3;
+  margin-left: 10px;
+}
+main > section > div.down {
+  border: 1px solid #82D9EA;
+  margin-top: -10px;
+}
+main > section > div.down header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  box-shadow: 0 1px 3px 1px gainsboro;
+  color: #009FE9;
+}
+main > section > div.down header h3 {
+  padding: 3px 0 3px 30px;
+  font-size: 15px;
+  width: 100px;
+  background: linear-gradient(#6abced, #caebff);
+}
+main > section > div.down header h3:before {
+  position: absolute;
+  content: '\f06b';
+  font-family: 'my_font';
+  margin-left: -18px;
+  margin-top: 4px;
+  color: #009FE9;
+}
+main > section > div.down header a {
+  color: #009FE9;
+  padding-right: 25px;
+  font-size: 12px;
+}
+main > section > div.down header a:after {
+  position: absolute;
+  content: '\f101';
+  font-family: 'my_font';
+  margin-left: 7px;
+  margin-top: 2px;
+}
+main > section > div.down > div {
+  display: flex;
+}
+main > section > div.down > div a {
+  flex: 1;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px 5px 0 5px;
+}
+main > section > div.down > div a img {
+  width: 100%;
+  height: 90px;
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: 'myfont';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+main {
+  padding: 10px 0 0 560px;
+}
+main section {
+  width: 460px;
+  border: 1px solid #E1E1E1;
+  padding: 40px 66px 24px 86px;
+  font-size: 13px;
+  color: #333333;
+  box-sizing: border-box;
+}
+main section label {
+  display: block;
+  color: #979797;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+main section label > input {
+  outline: none;
+  border: #CCCCCC 1px solid;
+  height: 35px;
+  width: 100%;
+  margin-top: 3px;
+}
+main section label span:before {
+  font-family: 'myfont';
+  content: '\f007';
+  position: absolute;
+  color: #DCDCDC;
+  font-size: 23px;
+  margin-top: -30px;
+  margin-left: 280px;
+}
+main section label span:after {
+  content: '\f023';
+  font-family: 'myfont';
+  position: absolute;
+  color: #DCDCDC;
+  font-size: 23px;
+  margin-top: 40px;
+  margin-left: 282px;
+}
+main section p:first-of-type {
+  line-height: 40px;
+  display: flex;
+}
+main section p:first-of-type input {
+  border: 1px solid #B0B4B7;
+  margin-right: 3px;
+  margin-top: 14px;
+}
+main section button {
+  width: 100%;
+  display: block;
+  height: 36px;
+  outline: none;
+  border: 1px solid #BCD1E6;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #616161;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 33px;
+  background: linear-gradient(#f9f9f9, #dadada, #d0d0d0);
+}
+main section p:nth-of-type(2) {
+  color: #9D9D9D ;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+main section p:last-of-type {
+  font-size: 13px;
+  color: #656565;
+  font-family: 'myfont';
+}
+main section p:last-of-type span {
+  color: #D8D8D8;
+  margin: 0 2px 0 2px;
+}
+main a,
+main a:link {
+  background-color: #7ABF55;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  margin-left: 300px;
+  width: 116px;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 3px;
+  justify-content: center;
+  border-bottom-right-radius: 3px;
+}
+main a span,
+main a:link span {
+  font-size: 28px;
+}
+main a:hover,
+main a:active {
+  color: #004800;
+}

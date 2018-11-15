@@ -1,0 +1,113 @@
+@charset "UTF-8";
+*{
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: 'myfont';
+  src: url('../fonts/icomoon.eot') format('eot'),
+  url('../fonts/icomoon.svg') format('svg'),
+  url('../fonts/icomoon.ttf') format('ttf'),
+  url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+main{
+  padding: 16px 0 0 504px;
+  section{
+    padding:68px 153px 57px 102px;
+    border: 1px solid #DDDDDD;
+    width: 630px;
+    box-sizing: border-box;
+    label{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      &:first-of-type{
+        span{
+          &:after{
+            font-family: 'myfont';
+            content: '\f007';
+            position: absolute;
+            color: #DCDCDC;
+            font-size: 23px;
+            margin-top: -3px;
+            margin-left: 255px;
+          }
+        }
+      }
+      &:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4){
+        span{
+          &:after{
+            font-family: 'myfont';
+            content: '\f023';
+            position: absolute;
+            color: #DCDCDC;
+            font-size: 23px;
+            margin-top: -3px;
+            margin-left: 255px;
+          }
+        }
+      }
+       span{
+         width: 100px;
+         text-align: right;
+         color: #959595;
+        margin-top: 10px;
+         &:before{
+           content: '*';
+           color: red;
+           font-size: 18px;
+           position: absolute;
+           margin-left: -13px;
+           margin-top: 2px;
+         }
+
+       }
+      input{
+        &:first-of-type{
+          padding-left: 5px;
+        }
+        height: 37px;
+        width: 270px;
+        outline: none;
+        border: 1px solid #CDCDCD;
+        margin-left: 20px;
+      }
+    }
+    p{
+      font-size: 13px;
+      margin-left: 110px;
+      display: flex;
+      margin-bottom: 30px;
+      input{
+        height: 15px;
+        width: 15px;
+        margin-top: 2px;
+      }
+
+      a{
+        text-decoration: none;
+        color: #0259A0;
+        margin-top: -5px;
+        span{
+          font-size: 20px;
+
+        }
+      }
+    }
+    button{
+      display: inline-block;;
+      padding: 10px 110px;
+      font-size: 18px;
+      outline: none;
+      border: none;
+      color: #606060;
+      letter-spacing: 2px;
+      margin-left: 110px;
+      background: linear-gradient(#F9F9F9,#DADADA,#D0D0D0)
+    }
+  }
+}

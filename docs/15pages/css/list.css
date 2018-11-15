@@ -1,0 +1,188 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+.bcenter {
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts/icomoon.eot') format('eot'), url('../fonts/icomoon.svg') format('svg'), url('../fonts/icomoon.ttf') format('ttf'), url('../fonts/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+header {
+  height: 250px;
+  width: 100%;
+  background: url('../img/tou3.PNG') no-repeat;
+  background-size: cover;
+}
+nav {
+  background-color: #2B2B2B;
+}
+nav p {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+nav p a {
+  color: white;
+  padding: 15px 42px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+nav p a:hover {
+  background-color: #009FE9;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+main section {
+  margin-right: 50px;
+}
+main section div.one {
+  background-color: #e6e6e6;
+  padding: 3px 5px 3px 35px;
+  font-size: 13px;
+  display: flex;
+  margin: 10px 0 5px 0;
+  justify-content: space-between;
+  color: #5e5e5e;
+}
+main section div.one > span:before {
+  position: absolute;
+  font-family: 'my_font';
+  content: '\f015';
+  margin-left: -25px;
+  font-size: 16px;
+}
+main section div.one p {
+  color: #bbbbbb;
+}
+main section div.se1 {
+  display: flex;
+  padding: 15px 6px;
+  border-bottom: 1px solid gainsboro;
+}
+main section div.se1 a {
+  margin-right: 10px;
+}
+main section div.se1 a img {
+  width: 140px;
+  height: 100%;
+}
+main section div.se1 aside {
+  font-size: 13px;
+}
+main section div.se1 aside h4 {
+  font-size: 15px;
+  color: #0259A0;
+}
+main section div.se1 aside p {
+  text-indent: 2em;
+  line-height: 20px;
+}
+main section div.se1 aside span {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'my_font';
+  color: #0259A0;
+  font-size: 12px;
+  cursor: pointer;
+}
+main > aside > h4 {
+  margin-top: 10px;
+  padding: 3px 0 3px 15px;
+  font-size: 16px;
+  color: #00A0E9;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+main > aside > h4:before {
+  content: '';
+  height: 17px;
+  width: 5px;
+  background-color: #00A0E9;
+  position: absolute;
+  margin-left: -15px;
+  margin-top: 3px;
+}
+main > aside > P {
+  margin-bottom: 10px;
+  background: linear-gradient(#f9f9f9, #dadada, #d0d0d0);
+  font-size: 14px;
+  padding: 5px 15px;
+  text-align: center;
+  color: #545454;
+  cursor: pointer;
+}
+main > aside > div {
+  background-color: gainsboro;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+main > aside > div a img {
+  height: 130px;
+}
+main > aside > div p {
+  width: 130px;
+  padding-left: 3px;
+  box-sizing: border-box;
+  color: #2f2f2f;
+}
+main > aside > div p:first-of-type,
+main > aside > div p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #0259A0;
+}
+main > aside > div p:nth-of-type(3),
+main > aside > div p:nth-of-type(4),
+main > aside > div p:nth-of-type(5),
+main > aside > div p:nth-of-type(6) {
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 22px;
+}
+main > aside > div p:nth-of-type(3):before,
+main > aside > div p:nth-of-type(4):before,
+main > aside > div p:nth-of-type(5):before,
+main > aside > div p:nth-of-type(6):before {
+  content: '\f0da';
+  font-family: 'my_font';
+  position: absolute;
+  margin-left: -11px;
+  margin-top: 1px;
+  color: red;
+}
+main > aside > div p:last-of-type::after {
+  width: 155px;
+  height: 1px;
+  content: '';
+  position: absolute;
+  background-color: #bbbbbb;
+  margin-left: -145px;
+  margin-top: 25px;
+}
+main > aside > div span {
+  display: flex;
+  justify-content: flex-end;
+  margin: 7px 0 5px 0;
+  font-family: 'my_font';
+  color: #5d5d5d;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #2B2B2B ;
+  color: #666666;
+}
